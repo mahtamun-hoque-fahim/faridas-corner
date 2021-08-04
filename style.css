@@ -1,0 +1,164 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    transition: .5s ease-in;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #eee;
+    color: #333;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+body > div.clip{
+    clip-path: circle(10% at 0% 80%);
+    background-color: #3bc7fd;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    top:0;
+    left: 0;
+    /* right: 0%; */
+    bottom:0;
+}
+body > div.clip1{
+    clip-path: circle(10% at 100% 30%);
+    background-color: #3bc7fd;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    top:0;
+    /* left: 0; */
+    right: 0;
+    /* bottom:0; */
+}
+body > section.home{
+    padding: 5vh 2.5vw 1.5vh 2.5vw;
+    height: 70vh;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff8c;
+    display: grid;
+    place-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 3px 20px #44444433;
+}
+
+body > section.home > div >h1{
+    font-size: 3rem;
+    font-family: Lobster Two;
+    color: #000;
+}
+body > section.home > p , body > section.home > div > p{
+    color:#777;
+    font-weight: 700;
+    font-family: Source Code Pro;
+}
+body > section.home > div.button{
+    margin: 7vh 0 0 0;
+}
+body > section.home > div.button > button.browse{
+    padding: 3.5vh 6vw;
+    width: 25vw;
+    border-radius: 50px;
+    background: linear-gradient(30deg ,#3bc6fd,cyan );
+    box-shadow: 0px 0px 10px #ccc;
+    border:none;
+    font-family: Source Code Pro;
+    font-weight:500 ;
+    font-size:15px;
+}
+
+
+
+
+
+
+
+/* =========================================================================
+============================================================================
+==========================                             =====================
+==========================        Media Query!!!       =====================
+==========================                             =====================
+============================================================================
+==========================================================================*/
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+    body{
+        background-color: #eee;
+        font-family: Quicksand;
+        color: #333;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+
+    body > div.clip{
+        clip-path: circle(15% at 0% 80%);
+        background-color: #3bc7fd;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top:0;
+        left: 0;
+        /* right: 0%; */
+        bottom:0;
+    }
+    body > div.clip1{
+        clip-path: circle(15% at 100% 20%);
+        background-color: #3bc7fd;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top:0;
+        /* left: 0; */
+        right: 0;
+        /* bottom:0; */
+    }
+    
+    body > section.home{
+        padding: 5vh 2.5vw 2.5vh 2.5vw;
+        height: 50vh;
+        box-shadow: 0px 3px 20px #4444441a;
+    }
+    
+    body > section.home > div >h1{
+        font-size: 2.2rem;
+    }
+    body > section.home > p {
+        font-size: 13px;
+    }
+    body > section.home > div.button{
+        margin: 3vh 0 0 0;
+        
+    }
+    body > section.home > div.button > button.browse{
+        padding: 3vh 5.5vw;
+        border-radius: 50px;
+        width: 50vw;
+        background: linear-gradient(30deg ,#3bc6fd,cyan );
+        box-shadow: none;
+        font-size:15px;
+    }
+}
